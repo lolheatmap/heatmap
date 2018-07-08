@@ -2,6 +2,6 @@ class ChampionController < ApplicationController
     
     # GET /champion
     def index 
-        render json: {status: 'SUCCESS', message: ['Leblanc','Vayne']}, status: 200
+        render json: {champions: [{name: 'Leblanc'}, {name: 'Vayne'}] }, status: 200
     end
 end
